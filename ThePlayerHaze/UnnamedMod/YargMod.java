@@ -46,10 +46,10 @@ public class YargMod {
         public final static Item CleariteIngot = new YargBasicItems(5002) .setMaxStackSize(16).func_111206_d("YargMod:CleariteIngot").setCreativeTab(YargModMaterialsTab);
        //blocks
         public final static Block blockMogite = new blockMogite(2002, Material.rock).setUnlocalizedName("blockMogite").setHardness(5.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteBlock");
-        public final static Block blockClearite = new blockClearite(2004, Material.iron).setUnlocalizedName("blockMogite").setHardness(5.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteBlock");
+        public final static Block blockClearite = new blockClearite(2004, Material.iron).setUnlocalizedName("blockClearite").setHardness(5.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteBlock");
 
         public final static Block blockMogiteOre = new blockMogiteOre(2003, Material.rock).setUnlocalizedName("blockMogiteOre").setHardness(3.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteOre");
-        public final static Block blockCleariteOre = new blockCleariteOre(2005, Material.iron).setUnlocalizedName("blockMogiteOre").setHardness(3.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteOre");
+        public final static Block blockCleariteOre = new blockCleariteOre(2005, Material.iron).setUnlocalizedName("blockCleariteOre").setOpacity(4.0F).setHardness(3.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteOre");
 
         
         @SidedProxy(clientSide="ThePlayerHaze.UnnamedMod.client.ClientProxy",
