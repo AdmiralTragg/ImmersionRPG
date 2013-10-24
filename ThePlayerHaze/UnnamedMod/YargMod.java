@@ -26,6 +26,9 @@ public class YargMod {
         @Instance("YargMod")
         public static YargMod instance;
         
+//Tool Materials   						   Name harvestLevel  durabiliy efficiency  mobDamage  encahtibility
+         //EnumToolMaterial Mogitemat = EnumHelper.addToolMaterial(name, 9999, 9999, 9999, 9999, 9999);
+        
        //Creative Tabs
         //Ingots/Resources
         public static CreativeTabs YargModMaterialsTab = new CreativeTabs("tabMaterials"){
@@ -44,6 +47,8 @@ public class YargMod {
        //Items
         public final static Item MogiteIngot = new YargBasicItems(5001) .setMaxStackSize(64).func_111206_d("YargMod:MogiteIngot").setCreativeTab(YargModMaterialsTab);
         public final static Item CleariteIngot = new YargBasicItems(5002) .setMaxStackSize(16).func_111206_d("YargMod:CleariteIngot").setCreativeTab(YargModMaterialsTab);
+               public final static Item MogitePick = new YargBasicItems(5003) .setMaxStackSize(1).setCreativeTab(YargModToolsTab).setUnlocalizedName("MogitePick");
+        public final static Item MogiteShovel = new YargBasicItems(5004) .setMaxStackSize(1).setCreativeTab(YargModToolsTab).setUnlocalizedName("MogiteShovel");
        //blocks
         public final static Block blockMogite = new blockMogite(2002, Material.rock).setUnlocalizedName("blockMogite").setHardness(5.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteBlock");
         public final static Block blockClearite = new blockClearite(2004, Material.iron).setUnlocalizedName("blockClearite").setHardness(5.0F).setStepSound(Block.soundStoneFootstep).setCreativeTab(YargModBlocksTab).func_111022_d("yargmod:MogiteBlock");
@@ -72,6 +77,7 @@ public class YargMod {
         	    //items
                 LanguageRegistry.addName(MogiteIngot, "Mogite Ingot");
                 LanguageRegistry.addName(CleariteIngot, "Clearite Ingot");
+                LanguageRegistry.addName(MogitePick, "Mogite Pick");
 
                 //blocks
                 GameRegistry.registerBlock(blockMogite, "blockMogite");
@@ -88,6 +94,8 @@ public class YargMod {
                 //Crafting
                 GameRegistry.addRecipe(new ItemStack(blockMogite), "MMM", "MMM", "MMM",
                 		'M', MogiteIngot);
+                GameRegistry.addRecipe(new ItemStack(MogitePick), "MMM", " I ", " I ",
+                		'M', MogiteIngot, 'I', Item.stick);		
                 
                 
                //Smelting
